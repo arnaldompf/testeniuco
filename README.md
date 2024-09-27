@@ -9,7 +9,7 @@ Este repositório contém testes automatizados para validar habilidades de autom
 1. Clone este repositório:
 
    ```bash
-   git clone <github.com/arnaldompf/testeniuco>
+   git clone github.com/arnaldompf/testeniuco
 
 2. Acesse o diretório do repositório:
 
@@ -21,7 +21,7 @@ Este repositório contém testes automatizados para validar habilidades de autom
    ```bash
    npm install
 
-4. Para rodar todos os testes(UI + API):
+4. Para rodar todos os testes (UI + API):
 
    ```bash
    npm run test
