@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { performance } from 'perf_hooks';
 
 const BASE_URL = 'https://reqres.in'; 
 
