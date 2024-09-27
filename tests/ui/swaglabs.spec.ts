@@ -44,9 +44,15 @@ test('Adicionar e remover produtos do carrinho', async ({ page }) => {
   await page.click('.shopping_cart_link');
 
   // remove dois produtos
-  const removeButtons = await page.$$('.btn_secondary'); 
-  await removeButtons[0].click(); 
-  await removeButtons[1].click(); 
+  const productsToRemove = [
+    'sauce-labs-bike-light',
+    'sauce-labs-bolt-t-shirt'
+  ];
+  for (const productId of productsToRemove) {
+    const removeButtonLocator = page.locator(`.btn_secondary[data-test="remove-${productId}"]`);
+    await expect(removeButtonLocator).toBeVisible(); 
+    await removeButtonLocator.click(); 
+  }
 
   // validação
   const remainingItems = await page.locator('.cart_item');
