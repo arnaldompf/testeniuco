@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - main         
+      - main
   pull_request:
     branches:
-      - main         
+      - main
 
 jobs:
   build:
@@ -19,10 +19,16 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'  # ou a versão que você está usando
+        node-version: '14'  
 
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm run test
+    - name: Install browsers
+      run: npx playwright install
+
+    - name: Run UI tests
+      run: npm run test:ui
+
+    - name: Run API tests
+      run: npm run test:api
