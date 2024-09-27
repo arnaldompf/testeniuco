@@ -10,3 +10,28 @@ Este repositório contém testes automatizados para validar habilidades de autom
 
    ```bash
    git clone <github.com/arnaldompf/testeniuco>
+
+2. Acesse o diretório do repositório:
+
+   ```bash 
+   cd testeniuco
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+
+4. Para rodar todos os testes(UI + API):
+
+   ```bash
+   npm run test
+
+5. Para rodar somente testes de UI:
+
+   ```bash
+   npm run test:ui
+
+5. Para rodar somente testes de API:
+
+   ```bash
+   npm run test:API
