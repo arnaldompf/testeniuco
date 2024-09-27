@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Login com credenciais corretas', async ({ page }) => {
+test('Login no sistema', async ({ page }) => {
 
   // login
   await page.goto('https://www.saucedemo.com/');
@@ -10,7 +10,7 @@ test('Login com credenciais corretas', async ({ page }) => {
   await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
 });
 
-test('Login com credenciais incorretas', async ({ page }) => {
+test('Login no sistema (credenciais incorretas)', async ({ page }) => {
 
   await page.goto('https://www.saucedemo.com/');
 
