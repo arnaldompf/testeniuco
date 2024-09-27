@@ -3,7 +3,8 @@
       "test:ui": "playwright test tests/ui",
       "test:api": "playwright test tests/api",
       "test": "playwright test",
-      "build": "tsc" 
+      "build": "tsc",
+      "postinstall": "npx playwright install"
     },
     "devDependencies": {
       "@playwright/test": "^1.12.0",
