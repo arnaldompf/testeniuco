@@ -9,7 +9,7 @@ Este repositório contém testes automatizados para validar habilidades de autom
 1. Clone este repositório:
 
    ```bash
-   git clone [github.com/arnaldompf/testeniuco](https://github.com/arnaldompf/testeniuco.git)
+   git clone https://github.com/arnaldompf/testeniuco
 
 2. Acesse o diretório do repositório:
 
